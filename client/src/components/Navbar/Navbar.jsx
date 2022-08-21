@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbarContainer">
         <Link to="/" className="logo">
-          Auth
+          PSIBORG
         </Link>
         <div className="navLinks">
           {!isLoggedIn && <Link to="/login">Login</Link>}
