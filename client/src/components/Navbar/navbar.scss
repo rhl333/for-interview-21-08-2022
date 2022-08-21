@@ -1,0 +1,66 @@
+div.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: white;
+  padding: 1rem 0;
+  box-shadow: rgba(100, 100, 111, 0.068) 0px 1px 2px 0px !important;
+  & div.navbarContainer {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    align-items: center;
+    & a.logo {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      color: black;
+      font-weight: 600;
+    }
+    & div.navLinks {
+      display: flex;
+      justify-content: center;
+      column-gap: 1.5rem;
+      align-items: center;
+      div.afterLogin {
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+        & button {
+          background-color: rgb(197, 67, 7);
+          color: white;
+          border: none;
+          padding: 0.4rem 1rem;
+          font-weight: 600;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        & span {
+          font-size: 0.9rem;
+          color: rgb(61, 60, 60);
+        }
+      }
+      & a {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 960px) {
+  div.navbarContainer {
+    width: max-content;
+    padding: 0 2rem;
+  }
+}
+
+@media all and (max-width: 550px) {
+  div.navbarContainer {
+    width: 420px !important;
+    padding: 0;
+    & div.afterLogin {
+      flex-direction: column;
+      row-gap: 0.6rem;
+    }
+  }
+}

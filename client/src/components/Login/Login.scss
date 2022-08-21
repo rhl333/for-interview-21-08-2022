@@ -1,0 +1,56 @@
+div.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  & div.formContainer {
+    width: 400px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    min-height: max-content;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    & h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+  & input {
+    display: block;
+    height: 2.4rem;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0 0.6rem;
+    outline: none;
+  }
+  & div.password {
+    margin-top: 1.6rem;
+  }
+  & form p {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+  }
+  & form button {
+    background-color: rgb(2, 78, 109);
+    border: none;
+    height: 2.2rem;
+    border-radius: 4px;
+    width: 36%;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1.9rem;
+    cursor: pointer;
+  }
+  & form a {
+    display: block;
+    color: green;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  & form div.forget {
+    margin: 1.2rem 0 0.4rem 0;
+  }
+}
